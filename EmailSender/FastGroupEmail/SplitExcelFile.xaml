@@ -1,0 +1,26 @@
+﻿<Window x:Class="FastGroupEmail.SplitExcelFile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="SplitExcelFile" Height="250" Width="750">
+    <Grid Background="CadetBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" MinWidth="300"/>
+            <ColumnDefinition Width="*" MinWidth="100"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Start" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="60,50,15,0" VerticalAlignment="Top" Width="124" Click="StartWindowSplitExcel"/>
+        <Button Content="Clear" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="60,0,15,0" VerticalAlignment="Center" Width="124" Click="ClearWindowSplitExcel"/>
+        <Button Content="Close" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="60,0,15,50" VerticalAlignment="Bottom" Width="124" Click="CloseWindowSplitExcel"/>
+
+        
+        
+        <GridSplitter Grid.Column="0" Width="2" Background="Black"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="10,50,20,0"  VerticalAlignment="Top" Width="470" Name="pathExcel" HorizontalScrollBarVisibility="Auto" />
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="10,0,20,40"  VerticalAlignment="Bottom" Width="470" Name="pathSave" HorizontalScrollBarVisibility="Auto" />
+        <Label Content="Path to excel file: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="353"/>
+        <Label Content="Path to save files: " HorizontalAlignment="Left" Margin="10,10,0,90" VerticalAlignment="Bottom" Width="353"/>
+
+    </Grid>
+</Window>
